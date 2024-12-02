@@ -34,7 +34,7 @@ You will need to pass in `publicClient` to most actions, you can initialize a vi
 import { createPublicClient, http } from "viem";
 import { berachain } from "viem/chains";
 
-// first, intialize a public client with berachain
+// first, initialize a public client with berachain
 const publicClient = createPublicClient({
   chain: berachain, // viem chains directory: https://github.com/wevm/viem/blob/main/src/chains/index.ts
   transport: http(),
@@ -56,13 +56,13 @@ import { createPublicClient, } from 'viem'
 import { berachain } from 'viem/chains'
 import { getSwap, type BeraConfig } from '@bera/berajs'
 
-// first, intialize a public client with berachain
+// first, initialize a public client with berachain
 const publicClient = createPublicClient({
   chain: berachain, // viem chains directory: https://github.com/wevm/viem/blob/main/src/chains/index.ts
   transport: http()
 })
 
-// intialize a beraconfig (optional)
+// initialize a beraconfig (optional)
 const beraConfig: BeraConfig = {
     endpoints: {
         dexRouter: 'https://'
